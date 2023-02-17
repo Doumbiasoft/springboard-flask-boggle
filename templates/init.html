@@ -1,0 +1,23 @@
+{% extends 'main.html' %}
+
+{% block title %} Boggle game {% endblock %}
+
+{% block body %}
+
+<div class="divDeco" >
+    <h1>Board size selection!</h1>
+    <form action="/start-game" method="POST">
+        <label for="size">Choose the board dimension:</label>
+        <select id="size" name="size" required style="font-size: large;">
+            <option value="">-- --</option>
+            <option value="4"> 4 x 4 </option>
+            <option value="5"> 5 x 5 </option>
+            <option value="6"> 6 x 6 </option>
+            <option value="7"> 7 x 7 </option>
+            <option value="8"> 8 x 8 </option>
+        </select>       
+        <input type="submit" value="Start the game!" style="font-size: large;">
+      </form>
+   
+</div>
+{% endblock %}

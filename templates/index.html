@@ -1,0 +1,44 @@
+{% extends 'main.html' %}
+
+{% block body %}
+
+<section id="boggle">
+  <div class="container">
+    <div class="box1">
+      <div class="divDeco" >
+        <p><strong>High Score:</strong> <b style="color: orange;">{{ highscore }}</b> - Number of plays: <b style="color: green;">{{ numbofplay }}</b></p>
+        <p><strong>Score:</strong> <b style="color: burlywood;" class="score">0</b></p>
+        <p><strong>Seconds remain:</strong> <b style="color: brown;" class="timer"></b></p>
+        <p class="msg"></p>
+        <ul class="words" style="color: green;font-weight: bold;"></ul>
+        <form method="POST" class="add-word">
+          <label for="word">Enter the word:</label>
+          <input type="text" id="word" name="word" class="word" autofocus placeholder="Guessed word" required>
+          <input type="submit" value="Send">
+        </form>
+        <form action="/" class="reset-game" style="display:none;">
+          <input type="submit" value="New game">
+        </form>
+      </div>
+    </div>
+    <div class="box2">
+      <div style="margin-left: 10px;">
+        <table class="board">
+          <tbody>
+            {% for row in board %}
+            <tr>
+              {% for cell in row %}
+              <td><div class="letterbox">{{ cell }}</div></td>
+              {% endfor %}
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+  </section>
+<div>   
+</div>
+
+{% endblock %}

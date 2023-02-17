@@ -1,0 +1,128 @@
+body{
+    font-family: 'Averta',sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.error{
+  color: red;
+}
+.valid{
+  color: green;
+}
+.navbar {
+    background-color: black;
+    overflow: hidden;
+}
+.navbar a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.navbar a:hover {
+  background-color: burlywood;
+  color: black;
+}
+main {
+    margin: 40px;
+}
+.board {
+    margin: 0px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  table {
+    height: 100%;
+    border-spacing: 10px;
+    border-collapse: separate;
+  }
+  
+  td {
+    width: 25%;
+    height: 25%;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 35px;
+    font-weight: bold;
+    background-color: #dedede;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: -2px -4px 8px rgb(255 255 255 / 60%), 2px 4px 8px rgb(0 0 0 / 30%);
+  }
+  td:hover {
+    cursor: pointer;
+  }
+  .letterbox {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #dedede;
+    border-radius: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px;
+    background-color: white;
+    box-shadow: -2px -4px 8px rgb(255 255 255 / 60%), 2px 4px 8px rgb(0 0 0 / 30%);
+  }
+  
+input[type=text],
+select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #404240;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+}
+
+input[type=submit]:hover {
+    background-color: #1A1B1A;
+}
+.divDeco {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    margin: 0px auto;
+    box-shadow: -2px -4px 8px rgb(255 255 255 / 60%), 2px 4px 8px rgb(0 0 0 / 30%);
+}
+
+
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .box1 {
+    flex-basis: 25%;
+  }
+  
+  .box2 {
+    flex-basis: 75%;
+  }
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+    }
+    .box1, .box2 {
+      flex-basis: 100%;
+    }
+  }
+  
+  
