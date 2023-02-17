@@ -1,5 +1,7 @@
 # Flask Boggle
 
+![alt boggle](https://github.com/Doumbiasoft/springboard-flask-boggle/blob/main/boggle.jpg)
+
 In this exercise, you plan & help code a Boggle game in Javascript and Python.
 
 ## The Game
